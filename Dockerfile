@@ -2,6 +2,8 @@ FROM alpine:3.7
 
 RUN apk update \
     && apk add php7 \
+              php7-ctype \
+               php7-curl \
                php7-iconv \
                php7-intl \
                php7-json \
