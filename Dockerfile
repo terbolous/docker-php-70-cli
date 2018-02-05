@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-RUN alpine update \
+RUN apk update \
     && apk add php7 \
                php7-iconv \
                php7-intl \
