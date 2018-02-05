@@ -9,7 +9,12 @@ RUN apk update \
                php7-pcntl \
                php7-pdo \
                php7-pdo_mysql \
+               php7-phar \
                php7-mysqli \
                php7-zip \
                php7-zlib \
+               unzip \
+               git \
+               curl \
+    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && rm -rf /var/cache/apk/*
